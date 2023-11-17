@@ -1,17 +1,18 @@
 body {
-    background-color: #05386b;
+    background-color: #202020;
 }
 
 .task-block {
-    background-color: aliceblue;
+    background-color: #ed6258;
     margin: 20px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px 0px;
 }
 
 .task-block > h1 {
-    color: #05386b;
+    color: #292525;
     font-size: 20px;
+    text-align: center;
     text-decoration: underline;
     font-family: Arial, sans-serif;
     font-weight: bolder;
@@ -19,14 +20,80 @@ body {
 
 .task-body {
     background-color: transparent;
-    border: 3px solid #05386b;
-    border-radius: 10px;
+    border: 3px solid #292525;
+    border-radius: 10px 0px;
     padding: 10px;
 }
 .task-body a {
     text-decoration: none;
-    color: cornflowerblue;
+    color: #292525;
     margin: 10px;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*------------------------------------------------------------*/
+/*
+    Задание 1
+*/
+.block {
+    font-size: 25px;
+    width: 200px;
+}
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.turquoise {
+    background-color: turquoise;
+}
+
+.gray {
+    background-color: gray;
+}
+/*------------------------------------------------------------*/
+/*
+    Задание 2
+*/
+.title {
+    color: red;
+}
+.back-red {
+    background-color: red;
+}
+.back-yel {
+    background-color: yellow;
+}
+ /*------------------------------------------------------------*/
+/*
+    Задание 4
+*/
+.wery {
+    border: 2px solid gray;
+    width: 100px;
+    height: 100px;
+}
+.wer {
+    width: 100px;
+    height: 100px;
+}
+ /*------------------------------------------------------------*/
+/*
+    Задание 5
+*/
+.meme-image {
+    margin: 0px 20px;
+    width: 100px;
+    height: 100px;
+}
+.meme-image-mirror {
+    margin: 0px 20px;
+    width: 150px;
+    height: 150px;
+    transform: scaleX(-1);
+}
+  

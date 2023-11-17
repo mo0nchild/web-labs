@@ -1,0 +1,132 @@
+﻿body {
+    background-color: #1f2833;
+}
+
+.task-block {
+    background-color: #45a29e;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.task-block > h1 {
+    color: #1f2833;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.task-body {
+    background-color: transparent;
+    border: 3px solid #1f2833;
+    border-radius: 10px;
+    padding: 10px;
+}
+.task-body a {
+    text-decoration: none;
+    color: #1f2833;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------------------------------------------*/
+/*
+    Задание 1
+*/
+.months > .october {
+    /* list-style: outside url('../img/list-item.png'); */
+    list-style-type: "\1F44D";
+}
+.months > .november {
+    /* list-style: inside url('../img/list-item.png'); */
+    list-style-type: "\1F44D";
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 2
+*/
+.border-task {
+    border-radius: 1px;
+    border-color: rgb(98, 87, 87);
+    border-width: thick;
+    font-size: 12pt;
+    margin: 10px;
+    
+}
+.border-task > .image {
+    border-top-style: solid;
+    border-top-color: red;
+    border-top-width: thick;
+
+    border-bottom-style: groove;
+    border-bottom-color: blue;
+
+    border-right-color: green;
+    border-right-style: dotted;
+    border-right-width: thick;
+
+    border-left-color: violet;
+    border-left-style: dashed;
+    border-left-width: medium;
+
+    width: 200px;
+    height: 200px;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 3
+*/
+.text {
+    text-align: center;
+    background-color: yellow;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thick;
+    border-color: red;
+    margin: 5%;
+    padding: -35% -20% -10% -15% 
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 4
+*/
+.box-blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-style: solid;
+    border-width: medium;
+    border-color: blue;
+}
+
+.box-green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-style: ridge;
+    border-width: medium;
+    border-color: green;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 5
+*/
+.last-task > h1.head {
+    text-align: center;
+}
+.last-task > .yellow{
+    background-color: yellow;
+}
+.last-task > h2 {
+    background-position: center;
+    background-color: yellow;
+    text-align: left;
+    margin-left: 45%;
+}
+.last-task >h3 {
+    text-align: center;
+    background-color: yellow;
+}
