@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="css/index.css" type="text/css" rel="stylesheet"/>
+
+        <title>Лабораторная работа 4</title>
+    </head>
+    <body>
+        <form method="post" action="">
+            <table cellspacing="10">
+                <tr>
+                    <td>
+                        <label for="name">Имя:</label>
+                        <input id="name" name="name" type="text" value="" maxlength="100" required/>
+                        
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="text" value="" maxlength="100" required/>
+
+                        <p>Вы уже проходили обучение в нашем центре:</p>
+                        <div style="margin-bottom: 30px;">
+                            <div>
+                                <input name="allready" type="radio" value="Yes" />
+                                <label>Да</label>
+                            </div>
+                            <div>
+                                <input name="allready" type="radio" value="No" checked/>
+                                <label>Нет</label>
+                            </div>
+                        </div>
+
+                        <label for="course">Курс:</label>
+                        <select id="course" name="course" size="3" multiple required>
+                            <option value="Word">Word</option>
+                            <option value="Excel">Excel</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="about">Дополнительная информация:</label>
+                        <textarea id="about" name="about" rows="6"  cols="50" maxlength="200"></textarea>
+
+                        <div class="form-control">
+                            <input type="submit" value="Отправить"/>
+                            <input type="reset" value="Обновить"/>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <a href="mypage.html" target="_blank">Открыть моя страницу</a>
+        </form>
+    </body>
+</html>
