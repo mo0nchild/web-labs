@@ -1,0 +1,128 @@
+body {
+    background-color: #05386b;
+}
+
+.task-block {
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.task-block > h1 {
+    color: #05386b;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.task-body {
+    background-color: transparent;
+    border: 3px solid #05386b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.task-body a {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 1
+*/
+#div1, #div2 {
+    background-color: maroon;
+}
+.blue {
+    background-color: blue;
+}
+div {
+    background-color: yellow;
+}
+div {
+    background-color: silver;
+}
+.green {
+    background-color: green;
+}
+#div3, #div4 {
+    background-color: maroon;
+}
+/* 
+    Изменение приоритетов 
+*/
+div, #changed {
+    background-color: greenyellow;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 2
+*/
+.cool-text {
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 18px;
+    font-style: italic;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: crimson;
+}
+.one-cool-text {
+    font: bold oblique 16px/10pt Impact;
+    color: blueviolet;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 3
+*/
+.first-line {
+    font: inherit;
+}
+.second-line {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+.third-line {
+    font-family: italic;
+    font-variant: small-caps;
+    font-size: larger;
+    line-height: 120%;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 5
+*/
+h1.header-main {
+    color: red;
+}
+p.header-second {
+    text-align: left;
+    text-indent: 50px;
+    text-transform: capitalize;
+    word-spacing: 10px;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 7
+*/
+.formatted-text {
+    text-indent: 15px;
+    text-align: justify;
+    
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    line-height: 10px;
+    
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}

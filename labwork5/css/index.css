@@ -1,0 +1,21 @@
+body {
+    background-color: #05386b;
+}
+
+.navigation-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8ee4af;
+    margin: 200px 30%;
+    padding: 10px;
+
+    border: 3px solid #edf5e1;
+    border-radius: 20px;
+}
+.navigation-block a, h1 {
+    color: #05386b;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+}
