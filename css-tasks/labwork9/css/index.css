@@ -1,0 +1,114 @@
+body {
+    background-color: #f7f9fb;
+}
+
+.task-block {
+    background-color: #8fc1e3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.task-block > h1 {
+    color: #1f2833;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.task-body {
+    background-color: transparent;
+    border: 3px solid #687864;
+    border-radius: 10px;
+    padding: 10px;
+}
+.task-body a {
+    text-decoration: none;
+    color: #1f2833;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 1
+*/
+
+.green-layer{
+    position: relative; 
+    z-index: 2;
+    color: green;
+    top: 20px;
+}
+
+.yellow-layer{
+    position: relative; 
+    z-index: 1;
+    color: yellow;
+    bottom: 15px;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 2
+*/
+.task-body .first-header {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+}
+.task-body .second-header {
+    position: relative;
+    font-size: 40px;
+    left: 20px;
+    font-weight: bold;
+}
+.task-body .third-header {
+    position: relative;
+    font-size: 40px;
+    left: -20px;
+    font-weight: bold;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 3
+*/
+.task-body .first-layer{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: silver;
+    border:1px solid black;
+}
+.task-body .second-layer{
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: silver;
+    border:1px solid black;
+}
+.task-body .third-layer{
+    position: relative;
+    top: -144px;
+    left: 220px;
+    width: 80px;
+    height: 80px;
+    background-color: silver;
+    border:1px solid black;
+    z-index: 2;
+}
+.task-body .fourd-layer{
+    position: relative;
+    bottom: 184px;
+    left: 250px;
+    width: 80px;
+    height: 80px;
+    background-color: silver;
+    border:1px solid black;
+    z-index: 1;
+}

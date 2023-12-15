@@ -1,0 +1,236 @@
+body {
+    background-color: #f7f9fb;
+}
+
+.task-block {
+    background-color: #f78352;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.task-block > h1 {
+    color: #1f2833;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.task-body {
+    background-color: transparent;
+    border: 3px solid #687864;
+    border-radius: 10px;
+    padding: 10px;
+}
+.task-body a {
+    text-decoration: none;
+    color: #1f2833;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 1
+*/
+.formula {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid black;
+    margin: 0;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 2
+*/
+.words-list {
+    display: inline;
+    font-size: 14px;
+    left: 20px;
+    margin: 0;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 3
+*/
+.left-column {
+    font-size: 14pt;
+    float: left;
+    color: yellow;
+
+    left: 15px;
+    right: 5px;
+    border: 2px dashed darkred;
+    text-decoration-line: overline;
+    
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+.right-column {
+    margin-left: 5px;
+    float: right;
+
+    padding-left: 50px;
+    max-width: 300px;
+    border: 2px solid darkred;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    background-color: green;
+    padding-right: 50px;
+    max-width: 200px;
+
+    color: black;
+    font-size: 14pt;
+    max-width: 500px;
+    background-clip: content-box;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 4
+*/
+.left-img-card {
+    float: left;
+    clear: left;
+    font-size: 14pt;
+}
+.right-img-card {
+    float: left;
+    clear: right;
+    font-size: 14pt;
+}
+.img-label {
+    padding-left: 30px; 
+    font-size: 30; 
+    color: black; 
+    font-weight: bold; 
+    float: left;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 5
+*/
+
+.img-card-clip {
+    clip: rect(80px, 350px, 300px, 50px); 
+    position: absolute;
+    display: inline-block;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 6
+*/
+.mark-first {
+    color: green;
+    background-color: yellow;
+    font-size: 18;
+    zoom: 80%;
+}
+.mark-second {
+    color: green;
+     background-color: yellow; 
+     font-size: 16; 
+     zoom: 150%; 
+     vertical-align: 5px;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 8
+*/
+.overflow-visible {
+    overflow: visible;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    height: 100px;
+    border: 4px solid black;
+}
+.overflow-scroll {
+    overflow: scroll;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10pt;
+    border: 4px solid black;
+}
+.overflow-hidden {
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10pt;
+    border: 4px solid black;
+}
+.overflow-auto {
+    overflow: auto;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10pt;
+    border: 4px solid black;
+}
+.margin-none > p {
+    margin: 0;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 9
+*/
+.custom-scrollbar {
+    width: 200px;
+    height: 50px;
+    overflow: scroll;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    scrollbar-width: thin;
+
+    color: white;
+    background-color: #1f2833;
+    scrollbar-color: green transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 4px;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 10
+*/
+.text-card {
+    visibility: visible;
+    font-size: 14pt;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    border: 2px solid black;
+}
+/*-----------------------------------------------------------*/
+/*
+    Задание 11
+*/
+.change-opacity {
+    opacity: 0.8;
+    margin: 0px 20px;
+}
+.change-alpha {
+    opacity: 0.3;
+    margin: 0px 20px;
+}
+
