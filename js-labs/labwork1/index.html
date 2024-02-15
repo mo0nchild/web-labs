@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Лабораторная работа 1</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div style="background-color: aliceblue; height: 50px;">
+            <div id="userData" style="opacity: 0;">
+                <p style="margin: 0px;">Ваше имя: <span id="userName"></span></p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div class="buttons-block" style="margin: 20px; display: inline-block;">
+                <button onclick="printAction()">Проверка Alert</button>
+                <button onclick="promptAction()">Проверка Prompt</button>
+                <button onclick="confirmAction()">Проверка Confirm</button>
+            </div>
+            <div style="margin: 20px; display: inline-block; vertical-align: top;">
+                <button style="display: block;" id="mainButton">Использовать</button>
+            </div>
+        </div>
+        <div class="variable-block">
+            <p>Переменная число: <span id="num"></span></p>
+            <p>Переменная строка: <span id="str"></span></p>
+            <p>Переманная комбинированная: <span id="comb"></span></p>
+
+            <p>ParseInt: <span id="intParsed"></span></p>
+            <p>ParseFloat: <span id="floatParsed"></span></p>
+            <p>ParseError: <span id="errorParsed"></span></p>
+        </div>
+
+        <button style="border: 1 px solid black; background-color: aliceblue; height: 30px;"
+                onclick="(() => window.alert('\'Карточка\' \u0022банка\u0022'))();">
+            ESC-последовательность
+        </button>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
