@@ -128,17 +128,75 @@ const task11 = {
             case 'Умножить': result = value1 * value2; break;
             case 'Разделить': 
                 while(true) {
-                    switch(prompt('Остаток или частное?')) {
-                        case 'Остаток': result = value1 % value2; break;
-                        case 'Частное': result = value / value2; break;
-                        default: continue;
+                    const option = prompt('Остаток или частное?');
+                    if (option == 'Остаток' || option == 'Частное') {
+                        result = option == 'Остаток' ? value1 % value2 : value1 / value2;  
+                        break;
                     }
-                    break;
                 }
                 break;
             default: window.alert('Неверная операция'); return;
         }
         window.alert(`Результат: ${result}`);
+    }
+};
+const task12 = {
+    getDivider: function() {
+        const value = parseInt(window.prompt('Введите значение'));
+        if(isNaN(value) == true) {
+            window.alert('Неверное значение');
+            return;
+        }
+        const results = [];
+        for(let index = 2; index <= 100 && results.length < 5; index++) {
+            if(value % index == 0) results.push(index);
+        }
+        window.alert(`Список: [${results}]`);
+    }
+};
+const task13 = {
+    getFactorias: function() {
+        const value = parseInt(window.prompt('Введите значение'));
+        if(isNaN(value) == true) {
+            window.alert('Неверное значение');
+            return;
+        }
+        let result = 1;
+        for(let index = 2; index <= value; index++) result *= index;
+
+        window.alert(`Результат: ${result}`);
+    }
+};
+const task14 = {
+    name: 'admin',
+    checkName: function() {
+        while(true) {
+            if (window.prompt('Введите имя') == this.name) break;
+        }
+        window.alert('Введено верное значение')
+    }
+};
+const task15 = {
+    generateString: function() {
+        let result = '', lastline = '';
+        for(let index = 0; index <= 10; index++) {
+            lastline = (lastline + index.toString())
+            result += `${lastline}\n`
+        }
+        window.alert(result);
+    }
+};
+const task16 = {
+    element: document.getElementById('task16-content'),
+    style: 'margin: 5px 0px 0px; padding: 0px; background-color: blue; border: none; height: 8px;',
+    createLine: function(width) {
+        this.element.innerHTML += `<hr style='${this.style}' width='${width}'>`;
+    },
+    createLines: function() {
+        this.innerHTML = '' 
+        for(let index = 10; index <= 100; index += 10) {
+            this.createLine(index);
+        }
     }
 };
 window.addEventListener('load', (event) => {
@@ -167,4 +225,15 @@ window.addEventListener('load', (event) => {
         .addEventListener('click', () => task10.findMaxValue());
     document.getElementById('task11-button')
         .addEventListener('click', () => task11.calculateValue());
+    document.getElementById('task12-button')
+        .addEventListener('click', () => task12.getDivider());
+    document.getElementById('task13-button')
+        .addEventListener('click', () => task13.getFactorias());
+
+    document.getElementById('task14-button')
+        .addEventListener('click', () => task14.getFactorias());
+    document.getElementById('task15-button')
+        .addEventListener('click', () => task15.generateString());
+    document.getElementById('task16-button')
+        .addEventListener('click', () => task16.createLines());
 });
