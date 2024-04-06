@@ -99,3 +99,53 @@ document.getElementById('task1_4-button').onclick = function() {
     writeYourGenres(personalMovieDB)
     personalMovieDB.showMyDB();
 };
+document.getElementById('task2_1-button').onclick = function() {
+    /** @type { (str: string) => string } */
+    const ucFirst = function(str) {
+        if (str === null || str.length <= 1) {
+            throw 'Нельзя преобразовать'
+        }
+        return str.slice(0, str.length - 1) + str.charAt(str.length - 1).toUpperCase();;
+    }
+    window.alert(`Результат: ${ucFirst(window.prompt("Введите слово: "))}`);
+};
+document.getElementById('task2_2-button').onclick = function() {
+    /** 
+     * @typedef { Object } TaskResult 
+     * @property { number } count
+     * @property { string[] } words
+     * @property { symbol } charByPos
+     * @property { string[] } firstTwo
+     * @property { string } upperCase
+    */
+    /** @type { (str: string) => TaskResult } */
+    const ucFirst = function(str) {
+        if(str === null || str.length < 7) {
+            throw 'Строка не подходит для выполнения';
+        }
+        const words = str.split(' ');
+        return {
+            count: str.length, 
+            words: words,
+            charByPos: str.charAt(6),
+            firstTwo: words.slice(0, 2),
+            upperCase: str.toUpperCase()
+        };
+    }
+    console.log(ucFirst(window.prompt('Введите строку:')));
+    window.alert(`Результат в консоле`);
+};
+document.getElementById('task2_3-button').onclick = function() {
+
+    const words = window.prompt('Введите предложение').split(' ');
+    for(let index = 0; index < words.length; index++) {
+        if(window.prompt(`${words[index]}`, '').length > 0) break;
+    }
+};
+document.getElementById('task2_4-button').onclick = function() {
+
+    const words = window.prompt('Введите предложение').split(' ');
+    for(let index = 0; index < words.length; index++) {
+        if(window.prompt(`${words[index]}`, '').length > 0) break;
+    }
+};
