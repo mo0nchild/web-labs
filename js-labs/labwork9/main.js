@@ -188,7 +188,6 @@ document.getElementById('task9-button').onclick = function() {
                 <li>HostName: ${window.location.hostname}</li>
                 <li>ProtocolName: ${window.location.protocol}</li>
                 <li>PathName: ${window.location.pathname}</li>
-            
             </ul>
         `;
     }
